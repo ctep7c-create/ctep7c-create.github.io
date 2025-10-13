@@ -9,8 +9,9 @@ a.button {
     border: 2px solid #0F5132;
     border-radius: 8px;
     margin: 10px auto;
+    background-color: #0F5132;
     text-decoration: none;
-    color: #0F5132;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
@@ -65,6 +66,7 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
 
 
 
