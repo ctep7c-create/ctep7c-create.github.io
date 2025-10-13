@@ -3,6 +3,13 @@ body {
     font-family: League Spartan, sans-serif;
 }
 
+a {
+    padding: 20px;
+    border: 2px solid #0F5132;
+    border-radius: 8px;
+    margin: 10px;
+}
+
 h1 {
     color: #1D2328;
     font-family: League Spartan, sans-serif;
@@ -54,6 +61,7 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
 
 
 
