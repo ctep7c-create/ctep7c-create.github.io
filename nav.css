@@ -4,25 +4,28 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-}
-nav ul li a {
-  display: block;
-  border: 1px sold;
-  border-radius: .5em;
-  padding: .5em 1em;
-  margin: .5em;
-}
-ul {
-  display: block;
   align-items: center;
   background-color: #0F5132;
-  list-style: none;
-  padding: .5em;
-  margin: .5em;
 }
-li {
+
+nav ul li {
   margin: 0 1em;
 }
+
+nav ul li a {
+  display: block;
+  border: 1px solid #1D2328;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #198754;
+}
+
 li.logo {
-  margin-center: auto;
+  margin: 0 auto;
 }
