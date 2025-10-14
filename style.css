@@ -108,6 +108,7 @@ blockquote {
 
 footer {
     display: flex;
+    flex-direction: column
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -121,10 +122,11 @@ footer {
 }
 
 footer .footer-logo {
-    width: 200px;
+    width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
 
 
