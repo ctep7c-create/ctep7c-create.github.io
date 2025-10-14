@@ -27,6 +27,10 @@
     margin: 0;
 }
 
+main {
+    max-width: 1080px;
+}
+
 body {
     background-color: #E1EDE0;
     font-family: 'League Spartan', sans-serif;
@@ -127,6 +131,7 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
 
 
 
