@@ -107,6 +107,10 @@ blockquote {
 }
 
 footer {
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+    gap: 10px;
     text-align: center;
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
@@ -115,5 +119,3 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
-
-
