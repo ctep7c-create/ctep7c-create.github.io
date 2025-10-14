@@ -15,6 +15,20 @@ a.button {
     font-weight: 600;
 }
 
+ol {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+    
 h1 {
     color: #1D2328;
     font-family: League Spartan, sans-serif;
@@ -66,6 +80,7 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
 
 
 
