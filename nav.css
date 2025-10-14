@@ -1,0 +1,28 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li a {
+  display: block;
+  border: 1px sold;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+}
+ul {
+  display: block;
+  align-items: center;
+  background-color: #0F5132;
+  list-style: none;
+  padding: .5em;
+  margin: .5em;
+}
+li {
+  margin: 0 1em;
+}
+li.logo {
+  margin-center: auto;
+}
