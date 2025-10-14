@@ -113,7 +113,7 @@ footer {
     gap: 10px;
     text-align: center;
     font-family: 'League Spartan', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #E1EDE0;
     margin-top: 40px;
     padding: 10px;
@@ -121,9 +121,10 @@ footer {
 }
 
 footer .footer-logo {
-    width: 75px;
+    width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
 
