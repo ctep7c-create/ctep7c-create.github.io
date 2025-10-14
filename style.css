@@ -26,6 +26,18 @@
     margin: 0;
 }
 
+.site-header {
+  display: flex;               
+  align-items: center;      
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
 body {
     background-color: #E1EDE0;
     font-family: 'League Spartan', sans-serif;
@@ -112,3 +124,4 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
