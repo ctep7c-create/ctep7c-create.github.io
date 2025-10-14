@@ -108,7 +108,7 @@ blockquote {
 
 footer {
     display: flex;
-    justify-content: cneter;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     text-align: center;
@@ -119,3 +119,4 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
