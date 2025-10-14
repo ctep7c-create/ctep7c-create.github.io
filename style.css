@@ -32,6 +32,7 @@ body {
 
 a.button {
     display: block;
+    width: fit-content;
     padding: 12px 24px;
     border: 2px solid #0F5132;
     border-radius: 8px;
@@ -111,6 +112,7 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
 
 
 
