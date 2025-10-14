@@ -29,3 +29,15 @@ nav ul li a:hover {
 li.logo {
   margin: 0 auto;
 }
+
+.site-header {
+  display: flex;               
+  align-items: center;      
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
