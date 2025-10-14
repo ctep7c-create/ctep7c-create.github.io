@@ -32,11 +32,11 @@ body {
 }
 
 a.button {
-    display: inline-block;
+    display: block;
     padding: 12px 24px;
     border: 2px solid #0F5132;
     border-radius: 8px;
-    margin: 10px 0;
+    margin: 10px auto;
     background-color: #0F5132;
     text-decoration: none;
     color: #FFFFFF;
@@ -112,6 +112,7 @@ footer {
     padding: 10px;
     background-color: #0F5132;
 }
+
 
 
 
