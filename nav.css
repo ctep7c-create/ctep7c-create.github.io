@@ -1,18 +1,18 @@
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #0F5132;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #0F5132;
 }
 
 .logo {
+  position: absolute;
+  top: -20px;
+  right: 20px;
   width: 200px;
   height: auto;
-  position: absolute;
-  right: 20px;
-  top: -20px;
   background-color: transparent;
   z-index: 2;
 }
@@ -24,7 +24,6 @@ nav ul {
   padding: 0;
   gap: 20px;
   align-items: center;
-  background-color: #0F5132;
 }
 
 nav ul li a {
