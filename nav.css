@@ -3,15 +3,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #FFFFFF;
+  background-color: #0F5132;
   position: relative;
 }
 
 .logo {
   width: 150px;
   height: auto;
-  position: relative;
-  top: -10px;
+  position: absolute;
+  left: 20px
+  top: -20px;
+  background-color: tarnsparent;
+  z-index: 2;
 }
 
 nav ul {
