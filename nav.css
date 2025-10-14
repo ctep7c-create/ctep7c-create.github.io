@@ -1,6 +1,6 @@
-.navbar {
-  display: flex;           
-  align-items: center;         
+.site-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #FFFFFF;
@@ -15,18 +15,13 @@
 }
 
 nav ul {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
+  gap: 20px;
   align-items: center;
   background-color: #0F5132;
-  gap: 20px;
-}
-
-nav ul li {
-  margin: 0 1em;
 }
 
 nav ul li a {
@@ -34,18 +29,10 @@ nav ul li a {
   border: 1px solid #1D2328;
   border-radius: 0.5em;
   padding: 0.5em 1em;
-  margin: 0.5em;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 nav ul li a:hover {
   background-color: #198754;
-}
-
-.site-header {
-  display: flex;               
-  align-items: center;      
-  justify-content: space-between;
-  padding: 10px 20px;
 }
