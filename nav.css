@@ -1,3 +1,19 @@
+.navbar {
+  display: flex;           
+  align-items: center;         
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: -10px;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -6,6 +22,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   background-color: #0F5132;
+  gap: 20px;
 }
 
 nav ul li {
@@ -26,18 +43,9 @@ nav ul li a:hover {
   background-color: #198754;
 }
 
-li.logo {
-  margin: 0 auto;
-}
-
 .site-header {
   display: flex;               
   align-items: center;      
   justify-content: space-between;
   padding: 10px 20px;
-}
-
-.logo {
-  width: 150px;
-  height: auto;
 }
