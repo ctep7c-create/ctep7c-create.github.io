@@ -63,7 +63,7 @@ body {
 a.button {
     display: block;
     width: fit-content;
-    padding: 12px 24px;
+    padding: 12px 20px;
     border: 2px solid #0F5132;
     border-radius: 8px;
     margin: 10px auto;
@@ -109,26 +109,26 @@ h2 {
 h3 {
     color: #1D2328;
     font-family: 'League Spartan', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4 {
     color: #1D2328;
     font-family: 'League Spartan', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p {
     color: #1D2328;
     font-family: 'League Spartan', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
 }
 
 blockquote {
     color: #1D2328;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     border-left: 4px solid #1D2328;
     padding-left: 10px;
     margin-left: 45px;
@@ -155,6 +155,7 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
 
 
 
