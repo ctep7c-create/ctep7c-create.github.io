@@ -14,17 +14,23 @@ Description: This page is my "About Me" page.
 	<link rel="stylesheet" href="nav.css">
 
 	<style>
-		img.wrap {
-			float: left;
-			width: 300px;
-			height: 300px;
-			-webkit-shape-outside: url(headshot.jpg);
-			shape-outside: url(headshot.jpg);
-			transition: transform 0.3s ease;
-			transform-origin: center center;
+		.image-container {
+ 			float: left;
+  			width: 300px;
+  			margin: 0 20px 20px 0;
 		}
-		
+
+		.image-container img.wrap {
+		  width: 100%;
+		  height: auto;
+		  transition: transform 0.3s ease;
+		}
+
+		.image-container img.wrap:hover {
+		  transform: scale(1.2);
+		}
 	</style>
+	
 </head>
 <body>
 <header>
