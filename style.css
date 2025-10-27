@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 .video-container {
-  max-width: 640px;
+  max-width: 480px;
   margin: 20px auto;
   text-align: center;
 }
@@ -154,5 +154,6 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
 
 
