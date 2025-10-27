@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"><!--This line of code showcases that the code and the language of the website will be in English-->
+<html lang="en">
 <!--
-<p>Name: Chante Hearn</p>
-<p>Date: September 25, 2025</p>
-<p>Page: About</p>
-<p>Description: This page is my "About Me" page.</p>
+Name: Chante Hearn
+Date: October 27, 2025
+Page: About
+Description: This page is my "About Me" page.
 -->
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,10 +20,8 @@
 			height: 300px;
 			-webkit-shape-outside: url(headshot.jpg);
 			shape-outside: url(headshot.jpg);
-		}
-		
-		img.wrap:hover {
-			transform: scale(1.5);
+			transition: transform 0.3s ease;
+			transform-origin: center center;
 		}
 		
 	</style>
@@ -52,9 +50,13 @@
 <main>
 	<a href="ChantéHearnResume.pdf.pdf" class="button">Check out my Resume!</a>
 <h2><strong>Biography</strong></h2>
-<video src="Resume Video.mp4" width="640" height="480" controls autoplay>
-	Your browser does not support HTML5 video. Get the <a href="Resume_Video.mp4">MP4 video </a>
-</video>
+<figure class="video-container">
+	<video src="Resume Video.mp4" width="640" height="480" controls autoplay>
+	Your browser does not support HTML5 video. Get the <a href="Resume Video.mp4">MP4 video </a>
+	</video>
+	<figcaption>This is my Video Resume!</figcaption>	
+</figure>
+	
 <div class="image-container">
 	<p><img src="headshot.jpg" class="wrap" alt="Photo of Chante on a gray background, wearing a beige crochet top."> I am currently working as an Academic Support Coordinator for Supplemental Instruction and Tutoring at the University of Missouri-Kansas City (UMKC), where I also serve as the Assistant Director and Certified Trainer for the International Center for Supplemental Instruction. Holding a Bachelor of Arts in Spanish and Psychology from UMKC, I am passionate about empowering students to achieve their academic goals and providing professional development opportunities that will help them long after they graduate.
 In my current role, I support the development and implementation of academic support programs that encourage collaborative learning, and I am dedicated to advancing the effectiveness of supplemental instruction across campus. My work at the International Center for Supplemental Instruction allows me to make an impact on an international level, and I was recently promoted to Assistant Director, a role I assumed in June 2024.</p>
