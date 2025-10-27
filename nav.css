@@ -36,9 +36,10 @@ nav ul li a:hover {
   background-color: #198754;
 }
 
-a:link {
+nav ul li a:link {
     color: #FFFFFF;
 }
-a:visited {
+
+nav ul li a:visited {
     color: #01796F;
 }
