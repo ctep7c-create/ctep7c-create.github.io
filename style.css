@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-a:link {
+main a:link {
     color: #025043;
 }
-a:visited {
+
+main a:visited {
     color: #01796F;
 }
 
@@ -140,3 +141,4 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
