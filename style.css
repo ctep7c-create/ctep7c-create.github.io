@@ -64,10 +64,10 @@ body {
 a.button {
     display: block;
     width: fit-content;
-    padding: 12px 20px;
+    padding: 20px 20px;
     border: 2px solid #0F5132;
     border-radius: 8px;
-    margin: 10px auto 5px auto;
+    margin: 10px auto 10px auto;
     background-color: #0F5132;
     text-decoration: none;
     text-align: center;
@@ -159,3 +159,4 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
