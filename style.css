@@ -160,3 +160,9 @@ footer .footer-logo {
     margin: 0 auto;
 }
 
+footer .footer-icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
