@@ -113,6 +113,10 @@ h3 {
     text-align: center;
 }
 
+.about-page h3 {
+    text-align: left;
+}
+
 h4 {
     color: #1D2328;
     font-family: 'League Spartan', sans-serif;
@@ -158,4 +162,5 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
 }
+
 
