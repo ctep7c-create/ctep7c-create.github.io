@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <section class="hero">
+      <h1>Home</h1>
+      <p><em>"Because the dawn right before the sun rises is the darkest.” — BTS</em></p>
+    </section>
+    <section class="site-header">
+      <img src="logo.png" alt="Chanté Hearn logo" class="logo">
+      <nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li class="dropdown">
+      <a href="projects.html">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="project-training.html">Training</a></li>
+        <li><a href="project-marketing.html">Marketing</a></li>
+        <li><a href="project-planning.html">Conference Planning</a></li>
+      </ul>
+    </li>
+    <li><a href="reflection.html">Reflection</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    </section>
+  </header>
+  <main>
+  <h2>Training</h2>
+        <p>Becoming a Certified Trainer for the ICSI created opportunities for me to increase my knowledge of proper facilitation strategies for both in-person and online engagement. It also allowed me to see the different perspectives of other professionals in the field. Learning the core values of supplemental instruction and facilitation also helped me in my on-campus role as a Coordinator; giving me the skills and tools needed to have engaging training sessions. These skills were also applicable during workshops where the target audience was usually students who have never utilized academic support services before. In order to become certified you must observe two days of training, each day led by a different facilitator. Then, you must practice facilitating activities each day, under the guidance of another Certified Trainer. Lastly, you’ll experience serving as a co-facilitator, receiving feedback on each step in the process. This cycle of training and feedback creates opportunities for self-reflection and growth as you are able to personally highlight your own “glows” (things that are going well), and “grows” (areas of possible growth). Since achieving certification in July 2023, I have not only facilitated online training every other month but have also facilitated regional training in Florida, California, and Puerto Rico.</p>
+  </main>
+  <footer>
+    <div class="footer-contact">
+      <img src="icons8-phone-100.png" alt="phone icon" class="footer-icon"><a href="tel:+18162356708">(816) 235-6708</a>
+      <img src="icons8-email-100.png" alt="email icon" class="footer-icon"><a href="mailto:ctevans@umkc.edu">ctevans@umkc.edu</a> 
+      <img src="icons8-linkedin-100.png" alt="LinkedIn icon" class="footer-icon"><a href="https://www.linkedin.com/in/chanteevans/">LinkedIn</a>
+    </div>
+    <img src="logo.png" alt="Chanté Hearn logo" class="footer-logo">
+  </footer>
+</body>
+</html>
