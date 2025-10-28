@@ -147,7 +147,6 @@ footer {
     text-align: center;
     font-family: 'League Spartan', sans-serif;
     font-size: 16px;
-    color: #E1EDE0;
     margin-top: 40px;
     padding: 10px;
     background-color: #0F5132;
@@ -172,12 +171,17 @@ footer .footer-contact {
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
+}
+
+footer a {
     text-decoration: none;
-    color: #FFFFFF
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #32CD32;
 }
 
 footer a:visited {
     color: #32CD32;
 }
-
-
