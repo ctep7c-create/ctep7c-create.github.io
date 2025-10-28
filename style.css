@@ -29,18 +29,18 @@
   }
 
   body.about-page h1 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
   }
 
   body.about-page p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
   }
 
   body.about-page ul,
   body.about-page ol {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
   }
 
@@ -240,3 +240,4 @@ footer a:hover {
 footer a:visited {
     color: #32CD32;
 }
+
