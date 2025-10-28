@@ -167,5 +167,9 @@ footer .footer-icon {
     margin: 0 auto;
 }
 
-
-
+footer .footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
