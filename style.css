@@ -3,18 +3,16 @@
 @media print {
   body.about {
     font-family: serif;
-    font-size: 10pt; /* Smaller font size for print */
+    font-size: 10pt;
     line-height: 1.2;
     color: #000;
     margin: 0;
   }
 
-  /* Set page margins to ensure everything fits */
   @page {
     margin: 1in;
   }
 
-  /* Hide unnecessary elements */
   nav,
   .hero,
   .video-container,
@@ -26,15 +24,13 @@
     display: none;
   }
 
-  /* Ensure the main content is centered and fits on one page */
   header, main {
     width: 100%;
-    page-break-before: always; /* Ensure clean page breaks */
+    page-break-before: always;
   }
 
-  /* Make sure name and description are visible */
   h1 {
-    font-size: 14pt; /* Adjust font size for name */
+    font-size: 14pt;
     text-align: center;
   }
 
@@ -45,9 +41,8 @@
     margin: 10px 0;
   }
 
-  /* Only show education section */
   h2, h3 {
-    font-size: 12pt; /* Adjust heading font size for print */
+    font-size: 12pt;
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -60,10 +55,9 @@
   }
 
   li {
-    margin-bottom: 5px; /* Add space between list items */
+    margin-bottom: 5px;
   }
 
-  /* Footer: only contact information */
   footer {
     text-align: center;
     font-size: 10pt;
@@ -84,27 +78,25 @@
   }
 
   footer .footer-logo {
-    display: none; /* Hide footer logo */
+    display: none;
   }
 
   footer .footer-icon {
-    display: none; /* Hide footer icons */
+    display: none;
   }
 
-  /* Remove unnecessary margins and padding */
   .bio-container {
-    display: block; /* Ensure bio container fits properly */
+    display: block;
     margin-bottom: 10px;
   }
 
   .bio-container img {
-    display: none; /* Hide the image in the bio */
+    display: none;
   }
 
-  /* Adjust body for print */
   body {
     width: 100%;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
   }
 }
 
@@ -293,5 +285,6 @@ footer a:hover {
 footer a:visited {
   color: #32CD32;
 }
+
 
 
