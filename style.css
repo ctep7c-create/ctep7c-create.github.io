@@ -153,7 +153,7 @@ footer {
 }
 
 footer .footer-logo {
-    width: 250px;
+    width: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -185,3 +185,4 @@ footer a:hover {
 footer a:visited {
     color: #32CD32;
 }
+
