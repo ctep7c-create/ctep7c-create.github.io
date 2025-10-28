@@ -43,6 +43,16 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
+  .hero {
+    display: none;
+  }
+
+  a.button,
+  a:link,
+  a:visited {
+    display: none;
+  }
 }
 
 .video-container {
@@ -230,5 +240,3 @@ footer a:hover {
 footer a:visited {
     color: #32CD32;
 }
-
-
