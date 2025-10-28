@@ -16,17 +16,21 @@
     display: none;
   }
 
-  body.about-page h1,
-  body.about-page p,
-  body.about-page ul,
-  body.about-page ol,
   body.about-page footer .footer-contact {
     display: block;
+    color: #000000;
   }
 
   body.about-page footer .footer-icon,
   body.about-page footer .footer-logo {
     display: none;
+  }
+
+  body.about-page h1,
+  body.about-page p,
+  body.about-page ul,
+  body.about-page ol {
+    display: block;
   }
 
   body.about-page h1 {
@@ -241,6 +245,7 @@ footer a:hover {
 footer a:visited {
     color: #32CD32;
 }
+
 
 
 
