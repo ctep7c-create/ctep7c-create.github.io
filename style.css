@@ -20,7 +20,7 @@ main a:link {
 }
 
 main a:visited {
-    color: #01796F;
+    color: #32CD32;
 }
 
 .hero {
@@ -166,5 +166,6 @@ footer .footer-icon {
     display: block;
     margin: 0 auto;
 }
+
 
 
