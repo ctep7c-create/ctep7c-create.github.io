@@ -175,3 +175,7 @@ footer .footer-contact {
     color: #FFFFFF
 }
 
+footer a:visited {
+    color: #32CD32;
+}
+
