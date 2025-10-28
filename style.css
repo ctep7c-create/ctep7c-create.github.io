@@ -288,18 +288,20 @@ footer a:visited {
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 8px;
   background-color: #E1EDE0;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form label {
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input[type="text"],
@@ -307,33 +309,37 @@ footer a:visited {
 .contact-form input[type="tel"],
 .contact-form textarea,
 .contact-form select {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin: 8px 0;
   border: 1px solid #000000;
   border-radius: 5px;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input[type="submit"] {
   padding: 10px 15px;
   background-color: #E1EDE0;
-  color: white;
+  color: #000000;
   align-items: center;
   border: 1px solid #000000;
   border-radius: 5px;
   font-size: 16px;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input[type="submit"]:hover {
   background-color: #0F5132;
+  color: #FFFFFF;
 }
 
 .contact-form ol {
   padding-left: 20px;
   margin: 10px 0;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form div {
-  text-align: left;
+  text-align: center;
   margin-top: 20px;
 }
