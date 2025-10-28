@@ -43,3 +43,16 @@ nav ul li a:link {
 nav ul li a:visited {
     color: #32CD32;
 }
+
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+nav ul ul li {
+    float:none;
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+}
