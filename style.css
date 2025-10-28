@@ -318,7 +318,8 @@ footer a:visited {
   padding: 10px 15px;
   background-color: #E1EDE0;
   color: white;
-  border: none;
+  align-items: center;
+  border: 1px solid #000000;
   border-radius: 5px;
   font-size: 16px;
 }
