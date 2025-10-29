@@ -72,17 +72,17 @@
     margin-top: 10px;
   }
 
-  footer .footer-contact a {
+  footer.footer-contact a {
     color: #000;
     text-decoration: none;
     margin: 5px;
   }
 
-  footer .footer-logo {
+  footer.footer-logo {
     display: none;
   }
 
-  footer .footer-icon {
+  footer.footer-icon {
     display: none;
   }
 
@@ -346,6 +346,7 @@ footer a:visited {
   text-align: center;
   margin-top: 20px;
 }
+
 
 
 
