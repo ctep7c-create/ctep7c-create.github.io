@@ -135,6 +135,7 @@ main a:visited {
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -345,5 +346,6 @@ footer a:visited {
   text-align: center;
   margin-top: 20px;
 }
+
 
 
