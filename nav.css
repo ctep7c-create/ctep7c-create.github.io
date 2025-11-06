@@ -76,15 +76,17 @@ nav ul li.dropdown:hover .dropdown-menu {
 
 .hamburger {
   display: none;
+  cursor: pointer;
+}
+
+.hamburger img.hamburger-icon {
+  width: 40px;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
   .hamburger {
     display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #FFFFFF;
-    user-select: none;
   }
 
   nav ul {
