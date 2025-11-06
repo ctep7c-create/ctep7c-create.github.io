@@ -1,15 +1,15 @@
 .site-header {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  padding: 20px;
+  gap: 20px;
+  padding: 20px 40px;
   background-color: #0F5132;
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
   height: auto;
   background-color: transparent;
 }
@@ -80,11 +80,17 @@ nav ul li.dropdown:hover .dropdown-menu {
 }
 
 .hamburger img.hamburger-icon {
-  width: 40px;
+  width: 50px;
   height: auto;
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 767px) {
+  .site-header {
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
   .hamburger {
     display: block;
   }
@@ -94,7 +100,7 @@ nav ul li.dropdown:hover .dropdown-menu {
     flex-direction: column;
     width: 100%;
     background-color: #0F5132;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     padding-left: 0;
   }
 
@@ -104,22 +110,24 @@ nav ul li.dropdown:hover .dropdown-menu {
   }
 
   nav ul li.dropdown .dropdown-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: static;
     background-color: #198754;
     border-radius: 0;
+    margin: 0;
   }
 
   nav ul li.dropdown .dropdown-menu li a {
     padding-left: 2rem;
   }
 
-  nav ul li.dropdown:hover .dropdown-menu {
+  nav ul li.dropdown input:checked + label + .dropdown-menu {
     display: flex;
   }
 
   #menu-toggle:checked + label + nav ul {
     display: flex;
+    flex-direction: column;
   }
 }
