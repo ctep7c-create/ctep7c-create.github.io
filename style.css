@@ -3,125 +3,149 @@
 @media print {
   body.about {
     font-family: serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.2;
     color: #000;
-    margin: 0;
+    margin: 1in;
+    align-items: justify;
+  }
+
+  body.about nav,
+  body.about .hero,
+  body.about .video-container,
+  body.about .button,
+  body.about .footer-icon,
+  body.about .footer-logo,
+  body.about .site-header,
+  body.about .logo,
+  body.about .bio-container img,
+  body.about blockquote,
+  body.about h1 {
+    display: none;
   }
 
   @page {
     margin: 1in;
   }
+}
 
-  nav,
-  .hero,
-  .video-container,
-  .button,
-  .footer-icon,
-  .footer-logo,
-  .site-header,
-  .logo,
-  blockquote 
-  h1  {
-    display: none;
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  body {
+    font-size: 14px;
   }
 
-  header, main {
+  main {
+    padding: 1rem;
+  }
+
+  .contact-form, .hero, .video-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  a.button {
     width: 100%;
+    padding: 12px 0;
   }
 
   h1 {
-    font-size: 14pt;
-    text-align: center;
+    font-size: 2rem;
   }
 
-  p {
-    font-size: 12pt;
-    line-height: 1.5;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  h2, h3 {
-    font-size: 12pt;
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  ul, ol {
-    font-size: 12pt;
-    padding-left: 20px;
-    margin-top: 0;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 10pt;
-    margin-top: 20px;
-    padding: 0;
-  }
-
-  footer .footer-contact {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  footer.footer-contact a {
-    color: #000;
-    text-decoration: none;
-    margin: 5px;
-  }
-
-  footer.footer-logo {
-    display: none;
-  }
-
-  footer.footer-icon {
-    display: none;
-  }
-
-  .bio-container {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .bio-container img {
-    display: none;
-  }
-
-  body {
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
-.video-container {
-  max-width: 100%;
-  margin: 10px auto 20px auto;
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #E1EDE0;
+  font-family: 'League Spartan', sans-serif;
+  color: #1D2328;
+}
+
+header, main {
+  width: 100%;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: normal;
+}
+
+h1, h2, h3, h4, p, blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 45px;
   text-align: center;
 }
 
-.video-container figcaption {
-  font-family: 'League Spartan', sans-serif;
-  color: #1D2328;
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+p {
   font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.5;
 }
 
-main a:link {
-  color: #FFFFFF;
+blockquote {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  border-left: 4px solid #1D2328;
+  padding-left: 10px;
+  margin-left: 45px;
+  text-align: center;
 }
 
-main a:visited {
-  color: #32CD32;
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  font-size: 12pt;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 .hero {
@@ -135,42 +159,40 @@ main a:visited {
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .hero h1 {
-  color: #FFFFFF;
   font-size: 2.5rem;
   margin: 0.5rem 0;
 }
 
 .hero p {
-  color: #FFFFFF;
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0;
 }
 
-main {
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
+.video-container {
+  max-width: 100%;
+  margin: 5px auto 20px auto;
+  text-align: center;
 }
 
-body {
-  background-color: #E1EDE0;
-  font-family: 'League Spartan', sans-serif;
-  margin: 0;
+.video-container figcaption {
+  color: #1D2328;
+  font-size: 16px;
+  margin: 5px 0 20px;
+  padding-bottom: 30px;
 }
 
 a.button {
   display: block;
   width: fit-content;
-  padding: 20px 20px;
+  padding: 10px;
   border: 2px solid #0F5132;
   border-radius: 8px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto;
   background-color: #0F5132;
   text-decoration: none;
   text-align: center;
@@ -178,68 +200,22 @@ a.button {
   font-weight: 600;
 }
 
-ul,
-ol {
-  margin: 1rem 0;
-  padding-left: 1.25rem;
+main a:link {
+  color: #FFFFFF;
 }
 
-li {
-  margin-bottom: 0.5rem;
+main a:visited,
+footer a:visited {
+  color: #32CD32;
 }
 
-ol {
-  list-style-type: none;
+main a.button:hover {
+  background-color: #198754;
+  border-color: #198754;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-h1 {
-  color: #1D2328;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 45px;
-  text-align: center;
-}
-
-h2 {
-  color: #1D2328;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 28px;
-  text-align: center;
-}
-
-h3 {
-  color: #1D2328;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 22px;
-  text-align: left;
-}
-
-h4 {
-  color: #1D2328;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-p {
-  color: #1D2328;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 16px;
-  text-align: left;
-}
-
-blockquote {
-  color: #1D2328;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  border-left: 4px solid #1D2328;
-  padding-left: 10px;
-  margin-left: 45px;
-  text-align: center;
+footer a:hover {
+  color: #32CD32;
 }
 
 footer {
@@ -249,11 +225,11 @@ footer {
   align-items: center;
   gap: 10px;
   text-align: center;
-  font-family: 'League Spartan', sans-serif;
   font-size: 16px;
   margin-top: 40px;
   padding: 10px;
   background-color: #0F5132;
+  color: #FFFFFF;
 }
 
 footer .footer-logo {
@@ -282,29 +258,20 @@ footer a {
   color: #FFFFFF;
 }
 
-footer a:hover {
-  color: #32CD32;
-}
-
-footer a:visited {
-  color: #32CD32;
-}
-
 .contact-form {
-  max-width: 500px;
+  max-width: 700px;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   border-radius: 8px;
   background-color: #E1EDE0;
-  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form label {
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
-  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input[type="text"],
@@ -315,20 +282,18 @@ footer a:visited {
   width: 95%;
   padding: 10px;
   margin: 8px 0;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   border-radius: 5px;
-  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input[type="submit"] {
   padding: 10px 15px;
   background-color: #E1EDE0;
-  color: #000000;
-  align-items: center;
-  border: 1px solid #000000;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 5px;
   font-size: 16px;
-  font-family: 'League Spartan', sans-serif;
+  cursor: pointer;
 }
 
 .contact-form input[type="submit"]:hover {
@@ -339,7 +304,6 @@ footer a:visited {
 .contact-form ol {
   padding-left: 20px;
   margin: 10px 0;
-  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form div {
@@ -347,6 +311,7 @@ footer a:visited {
   margin-top: 20px;
 }
 
-
-
-
+.bio-container {
+  display: block;
+  margin-bottom: 10px;
+}
