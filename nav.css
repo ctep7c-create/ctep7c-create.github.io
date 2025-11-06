@@ -102,17 +102,19 @@ nav ul li.dropdown:hover .dropdown-menu {
   }
 
   nav ul li.dropdown .dropdown-menu {
+    display: flex;
+    flex-direction: column;
     position: static;
     background-color: #198754;
     border-radius: 0;
   }
 
-  nav ul li.dropdown:hover .dropdown-menu {
-    display: none;
-  }
-
   nav ul li.dropdown .dropdown-menu li a {
     padding-left: 2rem;
+  }
+
+  nav ul li.dropdown:hover .dropdown-menu {
+    display: flex;
   }
 
   #menu-toggle:checked + label + nav ul {
