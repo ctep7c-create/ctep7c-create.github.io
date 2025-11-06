@@ -73,3 +73,49 @@ nav ul li.dropdown .dropdown-menu li a {
 nav ul li.dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    user-select: none;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0F5132;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    border-bottom: 1px solid #1D2328;
+    width: 100%;
+  }
+
+  nav ul li.dropdown .dropdown-menu {
+    position: static;
+    background-color: #198754;
+    border-radius: 0;
+  }
+
+  nav ul li.dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  nav ul li.dropdown .dropdown-menu li a {
+    padding-left: 2rem;
+  }
+
+  #menu-toggle:checked + label + nav ul {
+    display: flex;
+  }
+}
