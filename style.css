@@ -29,16 +29,32 @@
   }
 }
 
+/* Phones portrait */
 @media screen and (max-width: 767px) and (orientation: portrait) {
   body {
     font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, .hero, footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
   }
 
   main {
     padding: 1.5rem;
   }
 
-  .contact-form, .hero, .video-container {
+  .contact-form, .video-container {
     width: 95%;
     margin: 10px auto;
   }
@@ -55,18 +71,38 @@
   h2 {
     font-size: 1.5rem;
   }
+
+  footer {
+    padding: 10px 0;
+  }
 }
 
+/* Phones landscape */
 @media screen and (max-width: 767px) and (orientation: landscape) {
   body {
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, .hero, footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
   }
 
   main {
     padding: 1.5rem;
   }
 
-  .contact-form, .hero, .video-container {
+  .contact-form, .video-container {
     width: 90%;
     margin: 10px auto;
   }
@@ -76,68 +112,76 @@
     padding: 12px 0;
   }
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
+  footer {
+    padding: 10px 0;
   }
 }
 
+/* Tablets portrait (768px–1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  body {
-    font-size: 16px;
+  header, .hero, footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
   }
 
   main {
     padding: 2rem 1.5rem;
   }
 
-  .contact-form, .hero, .video-container {
-    width: 90%;
-    margin: 15px auto;
+  .contact-form, .video-container {
+    width: 80%;
+    margin: 10px auto;
   }
 
   a.button {
-    width: 80%;
-    padding: 12px 0;
+    width: fit-content;
+    padding: 10px 15px;
   }
 
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
+  footer {
+    padding: 15px 0;
   }
 }
 
+/* Tablets landscape (768px–1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
-    font-size: 17px;
+  header, .hero, footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
   }
 
   main {
     padding: 2rem 1.5rem;
   }
 
-  .contact-form, .hero, .video-container {
-    width: 85%;
-    margin: 15px auto;
+  .contact-form, .video-container {
+    width: 75%;
+    margin: 10px auto;
   }
 
   a.button {
-    width: 70%;
-    padding: 12px 0;
+    width: fit-content;
+    padding: 10px 15px;
   }
 
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
+  footer {
+    padding: 15px 0;
   }
 }
 
@@ -343,3 +387,4 @@ footer a { text-decoration: none; color: #FFFFFF; }
   display: block;
   margin-bottom: 10px;
 }
+
