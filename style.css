@@ -242,12 +242,13 @@ footer a { text-decoration: none; color: #FFFFFF; }
 
   main { padding: 1.5rem; }
 
-  .contact-form, .video-container { width: 95%; margin: 10px auto; }
+  .contact-form, .video-container { width: 75%; margin: 10px auto; }
 
   a.button { width: 100%; padding: 12px 0; }
 
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
 }
+
 
 
