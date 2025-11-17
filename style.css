@@ -314,4 +314,29 @@ footer a { text-decoration: none; color: #FFFFFF; }
 
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
+
+  .artifact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artifact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.artifact-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.artifact-box img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 6px;
 }
