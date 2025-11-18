@@ -7,7 +7,7 @@
     line-height: 1.2;
     color: #000;
     margin: 1in;
-    align-items: justify;
+    align-items: left;
   }
 
   body.about nav,
@@ -349,3 +349,4 @@ footer a {
 .artifact-box img:hover {
   transform: scale(1.05);
 }
+
