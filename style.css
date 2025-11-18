@@ -313,11 +313,6 @@ footer .footer-icon:hover {
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.flex-box .section-image:hover {
-  transform: scale(1.02);
 }
 
 .flex-box .section-text {
@@ -325,30 +320,13 @@ footer .footer-icon:hover {
   min-width: 250px;
 }
 
-/* Alternate image alignment for left/right */
-.flex-box:nth-child(even) .section-image { order: 1; }
-.flex-box:nth-child(even) .section-text { order: 0; }
-
-.flex-box p {
-  text-align: justify;
-  text-indent: 2em;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Reflection page first-letter styling */
-body.reflection .flex-box p::first-letter {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #198754;
-}
-
-/* Site Header: Align logo left, navigation centered */
+/* Navigation (nav) styles */
 .site-header {
   position: relative;
   display: flex;
-  justify-content: center; /* Center the navigation */
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   padding: 20px 40px;
   background-color: #0F5132;
   box-sizing: border-box;
@@ -358,9 +336,6 @@ body.reflection .flex-box p::first-letter {
   width: 200px;
   height: auto;
   position: absolute;
-  left: 20px; /* Align the logo to the left */
-  top: 50%; /* Vertically center it */
-  transform: translateY(-50%); /* Fine-tune the vertical centering */
   background-color: transparent;
 }
 
@@ -387,6 +362,7 @@ nav ul li.dropdown > label {
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
 }
 
 nav ul li a:hover,
@@ -394,48 +370,70 @@ nav ul li.dropdown > label:hover {
   background-color: #198754;
 }
 
-/* Navigation links (centered in header) */
-nav {
-  margin-left: auto;
-  margin-right: auto; /* Ensure the nav is centered */
+nav ul li a:link {
+  color: #FFFFFF;
+}
+
+nav ul li a:visited {
+  color: #32CD32;
+}
+
+/* Fix for dropdown menu width */
+nav ul li.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #0F5132;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5em;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+nav ul li.dropdown .dropdown-menu li a {
+  border: none;
+  padding: 0.5em 1em;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover {
+  background-color: #198754;
+  color: #FFFFFF;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img.hamburger-icon {
+  width: 50px;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .welcome-section, .goals-section {
-    flex-direction: column; /* Stack image and text vertically on small screens */
-    text-align: center; /* Center text on smaller screens */
+  .site-header {
+    justify-content: space-between;
+    padding: 15px 20px;
+    gap: 10px;
   }
 
-  .section-image {
-    width: 200px; /* Reduce image size for smaller screens */
-    height: 200px;
-  }
-
-  .section-text {
-    min-width: 100%; /* Ensure text can take full width */
-  }
-
-  .hero h1 {
-    font-size: 1.75rem;
-  }
-
-  .contact-form label,
-  .contact-form input[type="submit"] {
-    font-size: 14px;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .footer-contact {
-    flex-direction: column;
-  }
-
-  .footer-icon {
-    width: 60px;
-    height: 60px;
+  .logo {
+    width: 120px;
   }
 
   .hamburger {
@@ -454,6 +452,23 @@ nav {
   nav ul li {
     border-bottom: 1px solid #1D2328;
     width: 100%;
+  }
+
+  nav ul li.dropdown .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: static;
+    background-color: #198754;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  nav ul li.dropdown .dropdown-menu li a {
+    padding-left: 2rem;
+  }
+
+  nav ul li.dropdown input:checked + label + .dropdown-menu {
+    display: flex;
   }
 
   #menu-toggle:checked + label + nav ul {
