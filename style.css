@@ -383,3 +383,59 @@ footer a {
   transform: scale(1.05);
 }
 
+/* Table settings */
+.table-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.table-card figcaption {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  background-color: #E1EDE0;
+  color: #1D2328;
+}
+
+.table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #E1EDE0;
+  color: #1D2328;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+td, th[scope="row"] {
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+  background-color: #659857;
+  color: #FFFFFF;
+}
+
+tbody tr:nth-child(odd):not(:nth-child(1)):not(:nth-child(3)) {
+  background-color: #E1EDE0;
+  color: #1D2328;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F3F4F1;
+  color: #1D2328;
+}
+
+.table-card td, .table-card th {
+  border-bottom: 1px solid #ddd;
+}
