@@ -1,11 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .hero {
   background-color: #198754;
 }
 
 .site-header {
-  position: relative;
   width: 100%;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,19 +23,17 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.logo {
+.logo img {
   width: 200px;
   height: auto;
-  background-color: transparent;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -40,7 +46,7 @@ nav ul li.dropdown > label {
   border: 1px solid #1D2328;
   border-radius: 0.5em;
   padding: 0.5em 1em;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -48,14 +54,6 @@ nav ul li.dropdown > label {
 nav ul li a:hover,
 nav ul li.dropdown > label:hover {
   background-color: #198754;
-}
-
-nav ul li a:link {
-  color: #FFFFFF;
-}
-
-nav ul li a:visited {
-  color: #32CD32;
 }
 
 nav ul li.dropdown .dropdown-menu {
@@ -75,7 +73,6 @@ nav ul li.dropdown .dropdown-menu {
 nav ul li.dropdown .dropdown-menu li a {
   border: none;
   padding: 0.5em 1em;
-  display: block;
   width: 100%;
   text-align: left;
 }
@@ -89,7 +86,7 @@ nav ul li.dropdown:hover .dropdown-menu {
   cursor: pointer;
 }
 
-.hamburger img.hamburger-icon {
+.hamburger img {
   width: 50px;
   height: auto;
 }
@@ -97,9 +94,10 @@ nav ul li.dropdown:hover .dropdown-menu {
 @media screen and (max-width: 767px) {
   .site-header {
     padding: 10px 15px;
+    gap: 10px;
   }
 
-  .logo {
+  .logo img {
     width: 120px;
   }
 
@@ -112,7 +110,7 @@ nav ul li.dropdown:hover .dropdown-menu {
     flex-direction: column;
     width: 100%;
     background-color: #0F5132;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
     padding-left: 0;
   }
 
@@ -122,12 +120,11 @@ nav ul li.dropdown:hover .dropdown-menu {
   }
 
   nav ul li.dropdown .dropdown-menu {
+    position: static;
     display: none;
     flex-direction: column;
-    position: static;
     background-color: #198754;
     border-radius: 0;
-    margin: 0;
   }
 
   nav ul li.dropdown .dropdown-menu li a {
@@ -140,6 +137,5 @@ nav ul li.dropdown:hover .dropdown-menu {
 
   #menu-toggle:checked + label + nav ul {
     display: flex;
-    flex-direction: column;
   }
 }
