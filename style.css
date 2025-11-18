@@ -221,8 +221,10 @@ footer .footer-icon {
   height: 75px;
   display: block;
   margin: 0 auto;
+  padding: 5px;
+  box-sizing: content-box;
   cursor: pointer;
-  transition: filter 0.3s ease; /* smooth glow transition */
+  transition: filter 0.3s ease;
 }
 
 /* Hover effect for icons: bounce + lime green glow */
@@ -401,4 +403,5 @@ footer .footer-icon:hover {
 .artifact-box img:hover {
   transform: scale(1.05);
 }
+
 
