@@ -1,7 +1,7 @@
 .site-header {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 20px 40px;
@@ -12,6 +12,7 @@
 .logo {
   width: 200px;
   height: auto;
+  position: absolute;
   background-color: transparent;
 }
 
