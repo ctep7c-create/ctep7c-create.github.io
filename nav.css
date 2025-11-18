@@ -14,10 +14,6 @@
   background-color: transparent;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 nav ul {
   display: flex;
   list-style: none;
