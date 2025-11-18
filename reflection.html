@@ -10,25 +10,30 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   
   <style>
-    .box { 
-      background-color: #E1EDE0;
-      font-family: 'League Spartan', sans-serif;
-      font-size: 20px;
-      padding: 4px;
-      text-align: justify;
-      margin: 0.5em 0;
-      border-radius: 8px;
-    }
+  .box { 
+    background-color: #E1EDE0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    padding: 4px;
+    text-align: justify;
+    margin: 0.5em 0;
+    border-radius: 8px;
+  }
 
-    .box p {
-      text-indent: 2em;
-    }
+  .box p {
+    text-indent: 2em;
+    position: relative;
+  }
 
-    .box:first-of-type p::first-letter {
-      font-size: 250%;
-      color: #0F5132;
-    }
-  </style>
+  .box p::first-letter {
+    font-size: 2.5em;
+    color: #0F5132;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.1em;
+  }
+</style>
+  
 </head>
 
 <body>
@@ -111,6 +116,7 @@
 </body>
 
 </html>
+
 
 
 
