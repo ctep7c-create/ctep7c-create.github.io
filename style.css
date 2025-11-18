@@ -11,7 +11,6 @@
     align-items: left;
   }
 
-  /* Hide these elements when printing */
   body.about nav,
   body.about .hero,
   body.about .video-container,
@@ -26,13 +25,12 @@
     display: none;
   }
 
-  /* Set page margins for printing */
   @page {
     margin: 1in;
   }
 }
 
-/* General styles for body */
+/* General body styles */
 body {
   width: 100%;
   overflow-x: hidden;
@@ -42,39 +40,33 @@ body {
   color: #1D2328;
 }
 
-/* Header, main, and footer elements */
 header, main, .hero, footer {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Main content area */
 main {
   max-width: 1080px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Margin for headings, paragraphs, and blockquotes */
 h1, h2, h3, h4, p, blockquote {
   margin: 1rem 0;
 }
 
-/* Heading styles */
 h1 { font-size: 45px; text-align: center; }
 h2 { font-size: 28px; text-align: center; }
 h3 { font-size: 22px; text-align: left; }
 h4 { font-size: 18px; text-align: center; }
 
-/* Paragraph styles */
 p {
   font-size: 16px;
   text-align: left;
   line-height: 1.5;
 }
 
-/* Blockquote styles */
 blockquote {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -84,7 +76,6 @@ blockquote {
   text-align: center;
 }
 
-/* List styles */
 ul, ol {
   margin: 1rem 0;
   padding-left: 1.25rem;
@@ -95,7 +86,7 @@ ul { list-style-type: disc; list-style-position: inside; }
 ol { list-style-type: none; }
 li { margin-bottom: 0.5rem; }
 
-/* Home page edits */
+/* Flex sections for home page with 250x250 images */
 .welcome-section, .goals-section {
   display: flex;
   align-items: center;
@@ -105,8 +96,9 @@ li { margin-bottom: 0.5rem; }
 }
 
 .section-image {
-  width: 85px;
-  height: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -123,7 +115,7 @@ li { margin-bottom: 0.5rem; }
   order: 1;
 }
 
-/* Hero section styles */
+/* Hero section */
 .hero {
   position: relative;
   background-image: url("hero.png");
@@ -138,7 +130,6 @@ li { margin-bottom: 0.5rem; }
   color: #FFFFFF;
 }
 
-/* Hero text styles */
 .hero h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
@@ -151,14 +142,13 @@ li { margin-bottom: 0.5rem; }
   text-align: center;
 }
 
-/* Video container styling */
+/* Video container */
 .video-container {
   max-width: 100%;
   margin: 5px auto 20px auto;
   text-align: center;
 }
 
-/* Video caption styling */
 .video-container figcaption {
   color: #1D2328;
   font-size: 16px;
@@ -166,7 +156,7 @@ li { margin-bottom: 0.5rem; }
   padding-bottom: 30px;
 }
 
-/* Button styles */
+/* Buttons */
 a.button {
   display: block;
   width: fit-content;
@@ -182,22 +172,19 @@ a.button {
   box-sizing: border-box;
 }
 
-/* Link hover and visited site styles */
 main a:link { color: #FFFFFF; }
 main a:visited, footer a:visited { color: #32CD32; }
 
-/* Button hover effect */
 main a.button:hover {
   background-color: #198754;
   border-color: #198754;
 }
 
-/* Footer link hover color */
 footer a:hover {
   color: #32CD32;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -212,7 +199,6 @@ footer {
   color: #FFFFFF;
 }
 
-/* Footer logo styles */
 footer .footer-logo {
   width: 150px;
   height: auto;
@@ -220,7 +206,6 @@ footer .footer-logo {
   margin: 0 auto;
 }
 
-/* Footer contact section styling */
 footer .footer-contact {
   display: flex;
   align-items: center;
@@ -228,13 +213,11 @@ footer .footer-contact {
   margin-bottom: 20px;
 }
 
-/* Footer link styles */
 footer a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-/* Bounce keyframes for icons */
 @keyframes bounce {
   0%   { transform: translateY(0); }
   25%  { transform: translateY(-10px); }
@@ -243,7 +226,6 @@ footer a {
   100% { transform: translateY(0); }
 }
 
-/* Footer icon styles */
 footer .footer-icon {
   width: 75px;
   height: 75px;
@@ -255,13 +237,12 @@ footer .footer-icon {
   transition: filter 0.3s ease;
 }
 
-/* Hover effect for icons: bounce + lime green glow */
 footer .footer-icon:hover {
   animation: bounce 0.5s ease;
   filter: drop-shadow(0 0 15px #32CD32);
 }
 
-/* Contact form styles */
+/* Contact form */
 .contact-form {
   max-width: 700px;
   width: 100%;
@@ -272,14 +253,12 @@ footer .footer-icon:hover {
   background-color: #E1EDE0;
 }
 
-/* Contact form labels */
 .contact-form label {
   display: block;
   margin: 10px 0 5px;
   font-weight: bold;
 }
 
-/* Contact form input styles */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
@@ -293,7 +272,6 @@ footer .footer-icon:hover {
   box-sizing: border-box;
 }
 
-/* Contact form submit button styles */
 .contact-form input[type="submit"] {
   width: auto;
   padding: 10px 15px;
@@ -307,7 +285,6 @@ footer .footer-icon:hover {
   margin: 20px auto 0 auto;
 }
 
-/* Contact form submit button hover effect */
 .contact-form input[type="submit"]:hover {
   background-color: #0F5132;
   color: #FFFFFF;
@@ -318,7 +295,37 @@ footer .footer-icon:hover {
   margin-bottom: 10px;
 }
 
-/* Responsive styles for small screens */
+/* Artifact grid */
+.artifact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.artifact-box {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.artifact-box img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.artifact-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
 @media screen and (max-width: 767px) {
   body {
     font-size: 14px;
@@ -398,40 +405,13 @@ footer .footer-icon:hover {
 
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
+
+  .welcome-section, .goals-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-image {
+    margin: 0 auto;
+  }
 }
-
-/* Artifact grid styles */
-.artifact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 40px 0;
-  justify-content: center;
-}
-
-/* Artifact box styles */
-.artifact-box {
-  flex: 1 1 300px;
-  max-width: 350px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-}
-
-/* Artifact image hover effect */
-.artifact-box img {
-  width: 100%;
-  height: auto;
-  margin-top: 15px;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-}
-
-.artifact-box img:hover {
-  transform: scale(1.05);
-}
-
-
-
-
