@@ -329,7 +329,6 @@ footer .footer-icon:hover {
 .flex-box:nth-child(even) .section-image { order: 1; }
 .flex-box:nth-child(even) .section-text { order: 0; }
 
-/* Paragraph styling */
 .flex-box p {
   text-align: justify;
   text-indent: 2em;
