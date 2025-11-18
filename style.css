@@ -86,29 +86,37 @@ ul { list-style-type: disc; list-style-position: inside; }
 ol { list-style-type: none; }
 li { margin-bottom: 0.5rem; }
 
-/* Flex sections for home page with 250x250 images */
-.welcome-section, .goals-section {
+/* Centering the navigation bar */
+nav {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 40px 0;
-  flex-wrap: wrap;
+  justify-content: center; /* Centers the nav items horizontally */
+  align-items: center; /* Ensures vertical alignment */
+  position: relative; /* Necessary for absolute positioning of logo */
+  z-index: 1;
 }
 
-.section-image {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between nav items */
 }
 
-.section-text {
-  flex: 1;
-  min-width: 250px;
+nav a {
+  text-decoration: none;
+  color: #1D2328;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.left-image { order: 0; }
-.right-image { order: 1; }
+/* Absolute positioning for the logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centers the logo within the nav bar */
+  width: 150px; /* Adjust logo size as needed */
+  height: auto;
+}
 
 /* Hero section */
 .hero {
