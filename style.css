@@ -336,6 +336,16 @@ footer .footer-icon:hover {
   line-height: 1.5;
 }
 
+/* Reflection page first-letter styling */
+body.reflection .flex-box p::first-letter {
+  font-size: 2.5em;
+  color: #0F5132;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0.1em;
+  line-height: 1;
+}
+
 /* Artifact grid */
 .artifact-grid {
   display: flex;
@@ -438,4 +448,10 @@ footer .footer-icon:hover {
   .flex-box .section-text { min-width: 100%; }
 
   .flex-box p { text-indent: 0; }
+
+  /* Adjust reflection first-letter on mobile */
+  body.reflection .flex-box p::first-letter {
+    font-size: 1.8em;
+    margin-right: 0.05em;
+  }
 }
