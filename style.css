@@ -164,8 +164,10 @@ main a.button:hover {
   border-color: #198754;
 }
 
-/* Footer link hover effect */
-footer a:hover { color: #32CD32; }
+/* Footer link hover color */
+footer a:hover {
+  color: #32CD32;
+}
 
 /* Footer styles */
 footer {
@@ -190,14 +192,6 @@ footer .footer-logo {
   margin: 0 auto;
 }
 
-/* Footer icon styles */
-footer .footer-icon {
-  width: 75px;
-  height: 75px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* Footer contact section styling */
 footer .footer-contact {
   display: flex;
@@ -210,6 +204,31 @@ footer .footer-contact {
 footer a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+/* Bounce keyframes for icons */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-10px); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Footer icon styles */
+footer .footer-icon {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: filter 0.3s ease; /* smooth glow transition */
+}
+
+/* Hover effect for icons: bounce + lime green glow */
+footer .footer-icon:hover {
+  animation: bounce 0.5s ease;
+  filter: drop-shadow(0 0 15px #32CD32);
 }
 
 /* Contact form styles */
@@ -382,3 +401,4 @@ footer a {
 .artifact-box img:hover {
   transform: scale(1.05);
 }
+
