@@ -10,29 +10,38 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   
   <style>
-  .box { 
-    background-color: #E1EDE0;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 20px;
-    padding: 4px;
-    text-align: justify;
-    margin: 0.5em 0;
-    border-radius: 8px;
-  }
+    .reflection .box { 
+      background-color: #E1EDE0;
+      font-family: 'League Spartan', sans-serif;
+      font-size: 20px;
+      padding: 4px;
+      text-align: justify;
+      margin: 0.5em 0;
+      border-radius: 8px;
+    }
 
-  .box p {
-    text-indent: 2em;
-    position: relative;
-  }
+    .reflection .box p {
+      text-indent: 2em;
+      position: relative;
+    }
 
-  .box p::first-letter {
-    font-size: 2.5em;
-    color: #0F5132;
-    font-weight: bold;
-    float: left;
-    margin-right: 0.1em;
-  }
-</style>
+    .reflection .box p::first-letter {
+      font-size: 2.5em;
+      color: #0F5132;
+      font-weight: bold;
+      float: left;
+      margin-right: 0.1em;
+    }
+
+    /* Only apply to paragraphs on the Reflection page */
+    .reflection p::first-letter {
+      font-size: 2.5em;
+      color: #0F5132;
+      font-weight: bold;
+      float: left;
+      margin-right: 0.1em;
+    }
+  </style>
   
 </head>
 
@@ -51,27 +60,26 @@
         <img src="icons8-menu-100.png" alt="Menu" class="hamburger-icon">
       </label>
      
-<nav>
-  <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li class="dropdown">
-      <a href="project.html">Projects</a>
-      <ul class="dropdown-menu">
-        <li><a href="project.html#training">Training</a></li>
-        <li><a href="project.html#marketing">Marketing</a></li>
-        <li><a href="project.html#conference-planning">Conference Planning</a></li>
-      </ul>
-    </li>
-    <li><a href="reflection.html">Reflection</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li class="dropdown">
+            <a href="project.html">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a href="project.html#training">Training</a></li>
+              <li><a href="project.html#marketing">Marketing</a></li>
+              <li><a href="project.html#conference-planning">Conference Planning</a></li>
+            </ul>
+          </li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </section>
   </header>
 
-<main>
+<main class="reflection">
   <h2>Reflection</h2>
   <section class="flex-section">
     <div class="flex-box">
@@ -104,34 +112,13 @@
   </section>
 </main>
 
-
-  <footer>
-    <div class="footer-contact">
-      <img src="icons8-phone-100.png" alt="phone icon" class="footer-icon"><a href="tel:+18162356708">(816) 235-6708</a>
-      <img src="icons8-email-100.png" alt="email icon" class="footer-icon"><a href="mailto:ctevans@umkc.edu">ctevans@umkc.edu</a> 
-      <img src="icons8-linkedin-100.png" alt="LinkedIn icon" class="footer-icon"><a href="https://www.linkedin.com/in/chanteevans/">LinkedIn</a>
-    </div>
-    <img src="logo.png" alt="Chanté Hearn logo" class="footer-logo">
+<footer>
+  <div class="footer-contact">
+    <img src="icons8-phone-100.png" alt="phone icon" class="footer-icon"><a href="tel:+18162356708">(816) 235-6708</a>
+    <img src="icons8-email-100.png" alt="email icon" class="footer-icon"><a href="mailto:ctevans@umkc.edu">ctevans@umkc.edu</a> 
+    <img src="icons8-linkedin-100.png" alt="LinkedIn icon" class="footer-icon"><a href="https://www.linkedin.com/in/chanteevans/">LinkedIn</a>
+  </div>
+  <img src="logo.png" alt="Chanté Hearn logo" class="footer-logo">
 </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
