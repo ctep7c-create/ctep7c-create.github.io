@@ -48,8 +48,6 @@ main {
   max-width: 1080px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  display: grid;
-  grid-template-columns: auto;
 }
 
 h1, h2, h3, h4, p, blockquote {
@@ -82,18 +80,9 @@ ul, ol {
   font-size: 12pt;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-ol {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
+ul { list-style-type: disc; list-style-position: inside; }
+ol { list-style-type: none; }
+li { margin-bottom: 0.5rem; }
 
 .hero {
   position: relative;
@@ -150,8 +139,7 @@ a.button {
 }
 
 main a:link { color: #FFFFFF; }
-main a:visited,
-footer a:visited { color: #32CD32; }
+main a:visited, footer a:visited { color: #32CD32; }
 
 main a.button:hover {
   background-color: #198754;
@@ -331,20 +319,19 @@ footer a {
 
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
-
-  .artifact-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .artifact-grid {
-  display: grid;
-  grid-template-columns: repeat(1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 40px 0;
+  justify-content: center;
 }
 
 .artifact-box {
+  flex: 1 1 300px;
+  max-width: 350px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -356,5 +343,9 @@ footer a {
   height: auto;
   margin-top: 15px;
   border-radius: 6px;
+  transition: transform 0.3s ease;
 }
 
+.artifact-box img:hover {
+  transform: scale(1.05);
+}
