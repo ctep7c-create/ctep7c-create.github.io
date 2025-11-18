@@ -8,9 +8,7 @@
     line-height: 1.2;
     color: #000;
     margin: 1in;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: left;
   }
 
   body.about nav,
@@ -457,4 +455,3 @@ body.reflection .flex-box p::first-letter {
     margin-right: 0.05em;
   }
 }
-
