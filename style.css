@@ -107,13 +107,8 @@ li { margin-bottom: 0.5rem; }
   min-width: 250px;
 }
 
-.left-image {
-  order: 0;
-}
-
-.right-image {
-  order: 1;
-}
+.left-image { order: 0; }
+.right-image { order: 1; }
 
 /* Hero section */
 .hero {
@@ -130,17 +125,8 @@ li { margin-bottom: 0.5rem; }
   color: #FFFFFF;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  max-width: 600px;
-  margin: 0;
-  text-align: center;
-}
+.hero h1 { font-size: 2.5rem; margin: 0.5rem 0; }
+.hero p { font-size: 1.25rem; max-width: 600px; margin: 0; text-align: center; }
 
 /* Video container */
 .video-container {
@@ -175,14 +161,8 @@ a.button {
 main a:link { color: #FFFFFF; }
 main a:visited, footer a:visited { color: #32CD32; }
 
-main a.button:hover {
-  background-color: #198754;
-  border-color: #198754;
-}
-
-footer a:hover {
-  color: #32CD32;
-}
+main a.button:hover { background-color: #198754; border-color: #198754; }
+footer a:hover { color: #32CD32; }
 
 /* Footer */
 footer {
@@ -213,10 +193,7 @@ footer .footer-contact {
   margin-bottom: 20px;
 }
 
-footer a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
+footer a { text-decoration: none; color: #FFFFFF; }
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
@@ -234,12 +211,13 @@ footer .footer-icon {
   padding: 5px;
   box-sizing: content-box;
   cursor: pointer;
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 footer .footer-icon:hover {
   animation: bounce 0.5s ease;
-  filter: drop-shadow(0 0 15px #32CD32);
+  transform: scale(1.05); /* slight scale */
+  filter: drop-shadow(0 0 15px #32CD32); /* lime green glow */
 }
 
 /* Contact form */
@@ -290,10 +268,7 @@ footer .footer-icon:hover {
   color: #FFFFFF;
 }
 
-.bio-container {
-  display: block;
-  margin-bottom: 10px;
-}
+.bio-container { display: block; margin-bottom: 10px; }
 
 /* Artifact grid */
 .artifact-grid {
@@ -322,7 +297,7 @@ footer .footer-icon:hover {
 }
 
 .artifact-box img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* only scale, no glow */
 }
 
 /* Responsive */
