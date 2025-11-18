@@ -1,6 +1,8 @@
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -8,6 +10,11 @@
   gap: 40px;
   padding: 20px 40px;
   background-color: #0F5132;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+body {
+  padding-top: 100px;
 }
 
 .logo {
