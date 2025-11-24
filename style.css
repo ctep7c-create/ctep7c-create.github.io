@@ -1,3 +1,4 @@
+/* Custom fonts from Google Fonts applied to site */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
@@ -61,6 +62,13 @@ h1 { font-size: 45px; text-align: center; }
 h2 { font-size: 28px; text-align: center; }
 h3 { font-size: 22px; text-align: left; }
 h4 { font-size: 18px; text-align: center; }
+
+/* Custom font used here */
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 p {
   font-size: 16px;
@@ -477,5 +485,6 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     flex-direction: column;
   }
 }
+
 
 
