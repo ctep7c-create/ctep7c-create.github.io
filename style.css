@@ -70,6 +70,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
 }
 
 h2 {
@@ -494,6 +495,7 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     flex-direction: column;
   }
 }
+
 
 
 
