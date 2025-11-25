@@ -84,10 +84,15 @@ nav ul li.dropdown .dropdown-menu li a:hover {
 .hamburger {
   display: none;
   cursor: pointer;
+  position: absolute;
+  right: 20px; /* Move to right */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
 }
 
 .hamburger img.hamburger-icon {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
