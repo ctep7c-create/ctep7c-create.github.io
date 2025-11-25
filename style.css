@@ -1,6 +1,6 @@
 /* Custom fonts from Google Fonts applied to site */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap');
 
 /* Print styles */
 @media print {
@@ -65,10 +65,18 @@ h4 { font-size: 18px; text-align: center; }
 
 /* Custom font used here */
 h1 {
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 p {
@@ -486,6 +494,7 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     flex-direction: column;
   }
 }
+
 
 
 
