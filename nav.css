@@ -67,7 +67,7 @@ nav ul li.dropdown .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 300px;
+  min-width: 175px;
   width: auto;
   background-color: #0F5132;
   list-style: none;
