@@ -85,7 +85,7 @@ nav ul li.dropdown .dropdown-menu li a:hover {
   display: none;
   cursor: pointer;
   position: absolute;
-  right: 20px; /* Move to right */
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1001;
@@ -108,13 +108,11 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     width: 120px;
   }
 
-  /* Show hamburger on mobile */
   .hamburger {
     display: block;
     z-index: 1001;
   }
 
-  /* Hide nav by default */
   nav ul {
     display: none;
     flex-direction: column;
@@ -122,12 +120,15 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     background-color: #0F5132;
     margin: 10px 0 0 0;
     padding-left: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
   }
 
-  /* Show nav when hamburger is checked */
   #menu-toggle:checked + label + nav ul {
     display: flex;
     flex-direction: column;
+    max-height: 500px; /* adjust for tallest menu */
   }
 
   nav ul li {
@@ -143,20 +144,20 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     text-align: left;
   }
 
-  /* Dropdown submenu for mobile */
   nav ul li.dropdown .dropdown-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #198754;
     padding: 0;
     margin: 0;
     border-radius: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
   }
 
-  /* Show dropdown when nested checkbox is checked */
   nav ul li.dropdown input[type="checkbox"]:checked + label + .dropdown-menu {
-    display: flex;
-    flex-direction: column;
+    max-height: 500px; /* adjust for largest submenu */
   }
 
   nav ul li.dropdown .dropdown-menu li a {
