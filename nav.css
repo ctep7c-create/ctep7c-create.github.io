@@ -82,7 +82,7 @@ nav ul li.dropdown .dropdown-menu li a {
   border: none;
   padding: 0.5em 1em;
   display: block;
-  width: 100%;
+  width: auto;
   text-align: left;
 }
 
