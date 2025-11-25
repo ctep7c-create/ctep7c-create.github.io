@@ -460,11 +460,15 @@ nav ul li.dropdown .dropdown-menu li a:hover {
 .hamburger {
   display: none;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1001;
 }
 
 .hamburger img.hamburger-icon {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
@@ -530,3 +534,4 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     padding-left: 2rem;
   }
 }
+
