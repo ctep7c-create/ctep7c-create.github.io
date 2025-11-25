@@ -49,6 +49,10 @@ body.reflection p::first-letter {
   line-height: 1;
 }
 
+body.reflection p {
+  text-indent: 2em;
+}
+
 header, main, .hero, footer {
   width: 100%;
   margin: 0;
@@ -501,6 +505,7 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     flex-direction: column;
   }
 }
+
 
 
 
