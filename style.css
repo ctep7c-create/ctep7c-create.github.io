@@ -222,6 +222,10 @@ main a.button:hover {
   border-color: #198754;
 }
 
+footer a:link {
+  color: #FFFFFF;
+}
+
 footer a:hover {
   color: #32CD32;
 }
@@ -363,3 +367,4 @@ footer .footer-icon:hover {
   flex: 1;
   min-width: 250px;
 }
+
