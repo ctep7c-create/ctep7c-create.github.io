@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Name: Chante Hearn
+Date: October 27, 2025
+Page: About
+Description: This page is my "About Me" page.
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        .centered-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        .bio-container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0 40px 0;
+            line-height: 1.6;
+        }
+
+        .bio-container img {
+            height: 200px;
+            width: 200px;
+            margin-right: 25px;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .bio-container img.wrap:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body class="about">
+
+  <?php include 'header.html'; ?>
+
+<main>
+    <h2 class="centered-title">My Video Resume</h2>
+
+    <figure class="video-container">
+        <video src="ResumeVideo.mp4" width="640" height="480" controls autoplay muted>
+            Your browser does not support HTML5 video. Get the <a href="ResumeVideo.mp4">MP4 video</a>.
+        </video>
+        <figcaption>
+            This is my video resume. It outlines the work I have done and the skills I have gained in my roles as
+            Academic Support Coordinator and Assistant Director.
+        </figcaption>
+    </figure>
+
+    <h2><strong>Biography</strong></h2>
+
+    <div class="bio-container">
+        <img class="wrap" src="headshot.jpg"
+             alt="Photo of Chante on a gray background, wearing a beige crochet top.">
+        <p>
+            I am currently working as an Academic Support Coordinator for Supplemental Instruction and Tutoring
+            at the University of Missouri-Kansas City (UMKC), where I also serve as the Assistant Director and
+            Certified Trainer for the International Center for Supplemental Instruction. Holding a Bachelor of
+            Arts in Spanish and Psychology from UMKC, I am passionate about empowering students to achieve their
+            academic goals and providing professional development opportunities that will help them long after
+            they graduate.
+            <br><br>
+            In my current role, I support the development and implementation of academic support programs that
+            encourage collaborative learning, and I am dedicated to advancing the effectiveness of supplemental
+            instruction across campus. My work at the International Center for Supplemental Instruction allows
+            me to make an impact on an international level, and I was recently promoted to Assistant Director,
+            a role I assumed in June 2024.
+        </p>
+    </div>
+
+    <h2><strong>Education</strong></h2>
+
+    <h3>University of Missouri-Kansas City (UMKC)</h3>
+    <ol>
+        <li>
+            Bachelor of Arts, 2015–2019
+            <ul>
+                <li>Romance Languages and Literature with a Spanish Emphasis</li>
+                <li>Psychology</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2><strong>Certifications</strong></h2>
+
+    <h3>Certified Trainer (2023–Present)</h3>
+    <ul>
+        <li>International Center for Supplemental Instruction (ICSI)</li>
+    </ul>
+
+    <h3>Online Teaching (2025–2030)</h3>
+    <ul>
+        <li>UMKC Diane Fillion Center for Advancing Faculty Excellence (CAFE)</li>
+    </ul>
+
+    <a href="ChantéHearnResume.pdf" class="button">My Resume (PDF version)</a>
+
+</main>
+
+  <?php include 'footer.html'; ?>
+
+</body>
+</html>
