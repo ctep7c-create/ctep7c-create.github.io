@@ -1,3 +1,7 @@
+/* ===============================
+   NAVIGATION STYLES
+   =============================== */
+
 /* --- Desktop Styles (Default) --- */
 .site-header {
   position: relative;
@@ -19,6 +23,7 @@
   transform: translateY(-50%);
 }
 
+/* Main Navigation List */
 nav ul {
   display: flex;
   gap: 20px;
@@ -33,6 +38,7 @@ nav ul li {
   position: relative;
 }
 
+/* Navigation Links */
 nav ul li a,
 nav ul li.dropdown > label {
   display: block;
@@ -49,6 +55,7 @@ nav ul li.dropdown > label:hover {
   background-color: #198754;
 }
 
+/* Dropdown Menus */
 nav ul li.dropdown .dropdown-menu {
   display: none;
   position: absolute;
@@ -80,6 +87,7 @@ nav ul li.dropdown .dropdown-menu li a:hover {
   color: #FFFFFF;
 }
 
+/* Hamburger Menu (Desktop Hidden) */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -91,12 +99,17 @@ nav ul li.dropdown .dropdown-menu li a:hover {
 }
 
 .hamburger img.hamburger-icon {
-  width: 70px;
+  width: 70px; /* Desktop size */
   height: auto;
 }
 
-/* --- Mobile Styles --- */
+/* ===============================
+   MOBILE STYLES
+   max-width: 767px
+   =============================== */
 @media screen and (max-width: 767px) {
+
+  /* Header adjustments */
   .site-header {
     justify-content: space-between;
     padding: 15px 20px;
@@ -107,26 +120,28 @@ nav ul li.dropdown .dropdown-menu li a:hover {
     width: 120px;
   }
 
+  /* Hamburger menu shown on mobile */
   .hamburger {
     display: block;
   }
 
+  .hamburger img.hamburger-icon {
+    width: 40px; /* Mobile size */
+  }
+
+  /* Navigation List */
   nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #0F5132;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
     padding-left: 0;
     overflow: hidden;
-    max-height: 900px;
-    transition: max-height 0.5s ease-out;
   }
 
   #menu-toggle:checked + label + nav ul {
     display: flex;
-    flex-direction: column;
-    max-height: 900px;
   }
 
   nav ul li {
@@ -136,26 +151,25 @@ nav ul li.dropdown .dropdown-menu li a:hover {
 
   nav ul li a,
   nav ul li label {
-    padding: 1em;
     width: 100%;
     display: block;
+    padding: 1em;
     text-align: left;
   }
 
+  /* Dropdown Menu adjustments for mobile */
   nav ul li.dropdown .dropdown-menu {
     display: flex;
     flex-direction: column;
     background-color: #198754;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
+    max-height: 0;
     overflow: hidden;
-    max-height: 500px;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.4s ease;
+    border-radius: 0;
   }
 
   nav ul li.dropdown input[type="checkbox"]:checked + label + .dropdown-menu {
-    max-height: 500px;
+    max-height: 600px;
   }
 
   nav ul li.dropdown .dropdown-menu li a {
