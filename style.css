@@ -1,8 +1,13 @@
-/* Custom fonts from Google Fonts applied to site */
+/* =========================================================
+   FONTS
+   ========================================================= */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap');
 
-/* Print styles */
+
+/* =========================================================
+   PRINT STYLES
+   ========================================================= */
 @media print {
   body.about {
     font-family: serif;
@@ -32,7 +37,10 @@
   }
 }
 
-/* General body styles */
+
+/* =========================================================
+   GLOBAL RESETS & BODY
+   ========================================================= */
 *,
 *::before,
 *::after {
@@ -48,24 +56,6 @@ body {
   color: #1D2328;
 }
 
-body.reflection p::first-letter {
-  color: #0F5132;
-  font-size: 1.6em;
-  font-weight: bold;
-  line-height: 1;
-}
-
-body.reflection p {
-  text-indent: 2em;
-}
-
-body.reflection .hero blockquote {
-  font-size: 1.50rem;
-  max-width: 600px;
-  margin: 0;
-  text-align: center;
-}
-
 header, main, .hero, footer {
   width: 100%;
   margin: 0;
@@ -78,17 +68,15 @@ main {
   padding: 2rem 1rem;
 }
 
-h1, h2, h3, h4, p, blockquote {
-  margin: 1rem 0;
-}
 
-h1 { font-size: 45px; text-align: center; }
-h2 { font-size: 28px; text-align: center; }
-h3 { font-size: 22px; text-align: left; }
-h4 { font-size: 18px; text-align: center; }
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+h1, h2, h3, h4, p, blockquote { margin: 1rem 0; }
 
-/* Custom changes / fonts */
 h1 {
+  font-size: 45px;
+  text-align: center;
   font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-style: italic;
@@ -96,11 +84,16 @@ h1 {
 }
 
 h2 {
+  font-size: 28px;
+  text-align: center;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
+
+h3 { font-size: 22px; text-align: left; }
+h4 { font-size: 18px; text-align: center; }
 
 p {
   font-size: 16px;
@@ -117,6 +110,10 @@ blockquote {
   text-align: center;
 }
 
+
+/* =========================================================
+   LISTS
+   ========================================================= */
 ul, ol {
   margin: 1rem 0;
   padding-left: 1.25rem;
@@ -127,7 +124,10 @@ ul { list-style-type: disc; list-style-position: inside; }
 ol { list-style-type: none; }
 li { margin-bottom: 0.5rem; }
 
-/* Flex sections for home page with images directly next to text */
+
+/* =========================================================
+   FLEX SECTIONS (Homepage)
+   ========================================================= */
 .welcome-section, .goals-section {
   display: flex;
   align-items: center;
@@ -151,7 +151,10 @@ li { margin-bottom: 0.5rem; }
 .left-image { order: 0; }
 .right-image { order: 1; }
 
-/* Hero section */
+
+/* =========================================================
+   HERO
+   ========================================================= */
 .hero {
   position: relative;
   background-image: url("hero.png");
@@ -171,13 +174,7 @@ li { margin-bottom: 0.5rem; }
   margin: 0.5rem 0;
 }
 
-.hero p {
-  font-size: 1.50rem;
-  max-width: 600px;
-  margin: 0;
-  text-align: center;
-}
-
+.hero p,
 .hero blockquote {
   font-size: 1.50rem;
   max-width: 600px;
@@ -185,7 +182,10 @@ li { margin-bottom: 0.5rem; }
   text-align: center;
 }
 
-/* Video container */
+
+/* =========================================================
+   VIDEO CONTAINER
+   ========================================================= */
 .video-container {
   max-width: 100%;
   margin: 5px auto 20px auto;
@@ -199,7 +199,10 @@ li { margin-bottom: 0.5rem; }
   padding-bottom: 30px;
 }
 
-/* Buttons */
+
+/* =========================================================
+   BUTTONS & LINK COLORS
+   ========================================================= */
 a.button {
   display: block;
   width: fit-content;
@@ -222,15 +225,13 @@ main a.button:hover {
   border-color: #198754;
 }
 
-footer a:link {
-  color: #FFFFFF;
-}
+footer a:link { color: #FFFFFF; }
+footer a:hover { color: #32CD32; }
 
-footer a:hover {
-  color: #32CD32;
-}
 
-/* Footer */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 footer {
   display: flex;
   flex-direction: column;
@@ -286,7 +287,10 @@ footer .footer-icon:hover {
   100% { transform: translateY(0); }
 }
 
-/* Contact form */
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
 .contact-form {
   max-width: 700px;
   width: 100%;
@@ -333,12 +337,15 @@ footer .footer-icon:hover {
   color: #FFFFFF;
 }
 
+
+/* =========================================================
+   BIOGRAPHY / FLEX-BOX CONTENT
+   ========================================================= */
 .bio-container {
   display: block;
   margin-bottom: 10px;
 }
 
-/* Reflection section */
 .flex-section {
   display: flex;
   flex-direction: column;
@@ -368,3 +375,111 @@ footer .footer-icon:hover {
   min-width: 250px;
 }
 
+
+/* =========================================================
+   MOBILE (NEW — CLEAN + ORGANIZED)
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0F5132;
+    margin-top: 10px;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  #menu-toggle:checked + label + nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #1D2328;
+  }
+
+  nav ul li a,
+  nav ul li label {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    text-align: left;
+  }
+
+  nav ul li.dropdown .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #198754;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  nav ul li.dropdown input[type="checkbox"]:checked + label + .dropdown-menu {
+    max-height: 600px;
+  }
+
+  nav ul li.dropdown .dropdown-menu li a {
+    padding-left: 2rem;
+  }
+
+  .hamburger img.hamburger-icon {
+    width: 40px;
+    height: auto;
+  }
+
+  footer {
+    padding: 25px 15px;
+    gap: 15px;
+  }
+
+  footer .footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  footer .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-icon {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+  }
+
+  footer p,
+  footer a {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .hero {
+    height: 180px;
+    background-position: center top;
+  }
+
+  .hero h1 { font-size: 2.2rem; }
+  .hero p,
+  .hero blockquote {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .flex-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .flex-box .section-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
